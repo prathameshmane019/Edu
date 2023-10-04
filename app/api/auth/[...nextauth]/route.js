@@ -62,7 +62,7 @@ export const authOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET, // Your secret should be set in your environment variables
   pages: {
-    signIn: "/login", // Customize the sign-in page route as needed
+    signIn: "/", // Customize the sign-in page route as needed
   },
 };
 

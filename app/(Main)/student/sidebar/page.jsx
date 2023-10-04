@@ -1,15 +1,19 @@
 "use client";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { signOut } from "next-auth/react";
 export default function StudentSideBar() {
   const router = useRouter();
+  const { data: session } = useSession();
   const navigate = (name) => {
     router.push("/student" + name);
   };
   return (
     <div className=" bg-transparent fixed left-2 shadow-lg shadow-indigo-500/40  w-[15vw] mt-[2vh] h-[87vh] flex flex-col gap-2 p-2 border rounded-xl">
       <div className="ml-6">
-        <p className="text-xs font-medium text-gray-400">MAIN</p>
-
+      <p className="text-xs font-medium text-gray-400">{session?.user?.name}</p>
+        <p className="text-xs font-medium text-gray-400">{session?.user?.email}</p>
+        
         <div
           className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
           onClick={() => navigate("/dashboard")}
@@ -91,6 +95,19 @@ export default function StudentSideBar() {
             />
           </svg>
           Feedback
+        </div>
+        <div
+          className="mb-2 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
+          onClick={() => {signOut()
+            router.replace("/")}}
+        >
+          <svg
+           className="w-6 h-6  mr-4" 
+           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} 
+           stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+          </svg>
+          Logout
         </div>
       </div>
     </div>

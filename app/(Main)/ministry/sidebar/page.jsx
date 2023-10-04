@@ -1,5 +1,9 @@
 "use client";
+
 import { useRouter } from "next/navigation";
+import { signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
+const { data: session } = useSession();
 export default function MinistrySideBar() {
   const router = useRouter();
   const navigate = (name) => {
@@ -8,8 +12,9 @@ export default function MinistrySideBar() {
   return (
     <div className=" bg-transparent fixed left-2 shadow-lg shadow-indigo-500/40  w-[15vw] mt-[2vh] h-[87vh] flex flex-col gap-2 p-2 border rounded-xl">
       <div className="ml-6">
-      <p className="text-xs font-medium text-black-400 ">MAIN</p>
-
+      <p className="text-xs font-medium text-gray-400">{session?.user?.name}</p>
+        <p className="text-xs font-medium text-gray-400">{session?.user?.email}</p>
+        
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-black-500 group cursor-pointer flex items-center"
         onClick={() => navigate("/dashboard")}
@@ -54,7 +59,8 @@ export default function MinistrySideBar() {
 
       <div
         className="mt-4 py-1.5 text-sm font-medium text-slate-500 hover:text-blue-500 group cursor-pointer flex items-center"
-        onClick={() => navigate("/adduniversity")}
+        onClick={() => {signOut()
+          router.replace("/")}}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

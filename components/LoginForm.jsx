@@ -13,32 +13,56 @@ export default function LoginForm() {
 
   const router = useRouter();
   const { data: session} = useSession();
-  toast.success('🦄 Wow so easy!', {
-    position: "top-center",
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     try {
       const res = await signIn("credentials", {
         email,
         password,
         redirect: false,
       });
+      
       console.log(session?.user?.role);
       if (res.error) {
+        toast.error('Login Failed', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
         setError("Invalid Credentials");
         return;
       }
+      if(res.ok){
+        toast.success('Login Succesfull', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+      }
       
     } catch (error) {
+      toast.error('Login Failed', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       console.log(error);
     }
   };
