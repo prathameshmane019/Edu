@@ -15,7 +15,6 @@
     "/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/login/page.css",
       "static/chunks/app/login/page.js"
     ],
     "/register/page": [
@@ -29,16 +28,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(Main)/student/layout.js"
     ],
+    "/(pages)/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/about/page.js"
+    ],
     "/(Main)/student/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(Main)/student/dashboard/page.css",
       "static/chunks/app/(Main)/student/dashboard/page.js"
-    ],
-    "/(pages)/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/about/page.js"
     ]
   }
 }
