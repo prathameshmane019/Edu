@@ -11,7 +11,7 @@ const Header = () => {
     router.push(name);
   };
   return (
-    <div className="bg-gradient-to-r from-indigo-500 to-purple-400  navbar shadow-xl sticky top-0 ">
+    <div className="bg-gradient-to-r from-indigo-400 to-purple-400 z-50  navbar shadow-xl sticky top-0 ">
       <div className="flex-1">
         <div
           className="text-slate-200 btn btn-ghost normal-case text-xl"
@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div className="flex-none">
         <div
-          className="cursor-pointer text-slate-200"
+          className="cursor-pointer text-slate-100"
           onClick={() => navigate("/about")}
         >
           About

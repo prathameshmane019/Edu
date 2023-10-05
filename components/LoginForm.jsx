@@ -15,7 +15,22 @@ export default function LoginForm() {
 
   const router = useRouter();
   const { data: session } = useSession();
-
+  switch (session?.user?.role) {
+    case 'student':
+      router.push("/student/dashboard")
+      break;
+    case 'college':
+      router.push("/college/dashboard")
+      break;
+    case 'university':
+      router.push("/university/dashboard")
+      break;
+    case 'ministry':
+      router.push("/ministry/dashboard")
+      break;
+    default:
+      break;
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -25,13 +40,19 @@ export default function LoginForm() {
         password,
         redirect: false,
       });
-<<<<<<< HEAD
-
-      console.log(session?.user?.role);
-=======
       
-    
->>>>>>> upstream/main
+      if(res.ok){
+        toast.success('Login Succesfull', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+            }
       if (res.error) {
         toast.error("Login Failed", {
           position: "top-center",
@@ -45,67 +66,9 @@ export default function LoginForm() {
         });
         setError("Invalid Credentials");
         return;
+        
       }
-<<<<<<< HEAD
-      if (res.ok) {
-        switch (session?.user?.role) {
-          case "student":
-            router.push("/student/dashboard");
-            break;
-          case "college":
-            router.push("/college/dashboard");
-            break;
-          case "university":
-            router.push("/university/dashboard");
-            break;
-          case "ministry":
-            router.push("/ministry/dashboard");
-            break;
-          default:
-            break;
-        }
-        toast.success("Login Succesfull", {
-          position: "top-center",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-      }
-=======
-      if(res.ok){
-        switch (session?.user?.role) {
-            case 'student':
-              router.push("/student/dashboard")
-              break;
-            case 'college':
-              router.push("/college/dashboard")
-              break;
-            case 'university':
-              router.push("/university/dashboard")
-              break;
-            case 'ministry':
-              router.push("/ministry/dashboard")
-              break;
-            default:
-              break;
-          }
-          toast.success('Login Succesfull', {
-            position: "top-center",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            });
-              }
-      
->>>>>>> upstream/main
+     
     } catch (error) {
       toast.error("Login Failed", {
         position: "top-center",
@@ -120,16 +83,9 @@ export default function LoginForm() {
       console.log(error);
     }
   };
-<<<<<<< HEAD
-=======
-
-  
-  
- 
->>>>>>> upstream/main
   return (
     <>
-      <ToastContainer />
+      
       <div className="login grid place-items-center h-screen">
         <div className="shadow-lg p-5 rounded-lg border-t-4 border-blue-400">
           <h1 className="text-xl font-bold my-4">Login</h1>
@@ -143,14 +99,11 @@ export default function LoginForm() {
             <input
               onChange={(e) => setPassword(e.target.value)}
               type="password"
-<<<<<<< HEAD
+
               placeholder="Password"
             />
-            <button className="bg-blue-600 text-white font-bold cursor-pointer px-6 py-2">
-=======
-              placeholder="Password" />
+            
             <button className="bg-green-600 text-white font-bold cursor-pointer px-6 py-2" >
->>>>>>> upstream/main
               Login
             </button>
             {error && (

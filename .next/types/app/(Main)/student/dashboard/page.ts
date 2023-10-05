@@ -1,4 +1,4 @@
-// File: E:\EDU\Edu\app\(Main)\student\dashboard\page.js
+// File: D:\SIH EduNexus\app\(Main)\student\dashboard\page.js
 import * as entry from '../../../../../../app/(Main)/student/dashboard/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

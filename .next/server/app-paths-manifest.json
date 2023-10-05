@@ -1,8 +1,9 @@
 {
-  "/page": "app/page.js",
   "/login/page": "app/login/page.js",
-  "/register/page": "app/register/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
   "/(pages)/about/page": "app/(pages)/about/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/(Main)/student/dashboard/page": "app/(Main)/student/dashboard/page.js"
+  "/(Main)/college/addproject/page": "app/(Main)/college/addproject/page.js",
+  "/(Main)/student/dashboard/page": "app/(Main)/student/dashboard/page.js",
+  "/(Main)/college/dashboard/page": "app/(Main)/college/dashboard/page.js"
 }

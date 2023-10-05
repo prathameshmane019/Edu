@@ -1,4 +1,4 @@
-// File: E:\EDU\Edu\app\api\auth\[...nextauth]\route.js
+// File: D:\SIH EduNexus\app\api\auth\[...nextauth]\route.js
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 

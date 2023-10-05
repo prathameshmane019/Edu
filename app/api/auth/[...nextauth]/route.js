@@ -2,7 +2,7 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import Student from "../../../../models/student";
-
+import { connectMongoDB } from "@/lib/mongodb";
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -12,6 +12,7 @@ export const authOptions = {
         const { email, password } = credentials;
 
         try {
+          await connectMongoDB();
           const user = await Student.findOne({ email });
 
           if (!user) {
