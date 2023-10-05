@@ -35,42 +35,10 @@
       "static/css/app/(Main)/student/dashboard/page.css",
       "static/chunks/app/(Main)/student/dashboard/page.js"
     ],
-    "/(Main)/college/layout": [
+    "/(pages)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(Main)/college/layout.js"
-    ],
-    "/(Main)/college/dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(Main)/college/dashboard/page.css",
-      "static/chunks/app/(Main)/college/dashboard/page.js"
-    ],
-    "/(Main)/college/addproject/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(Main)/college/addproject/page.js"
-    ],
-    "/dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dashboard/page.js"
-    ],
-    "/(Main)/ministry/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(Main)/ministry/layout.js"
-    ],
-    "/(Main)/ministry/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(Main)/ministry/loading.js"
-    ],
-    "/(Main)/ministry/dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(Main)/ministry/dashboard/page.css",
-      "static/chunks/app/(Main)/ministry/dashboard/page.js"
+      "static/chunks/app/(pages)/about/page.js"
     ]
   }
 }

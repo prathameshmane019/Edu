@@ -1,4 +1,4 @@
-// File: D:\SIH EduNexus\app\register\page.jsx
+// File: E:\EDU\Edu\app\register\page.jsx
 import * as entry from '../../../../app/register/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

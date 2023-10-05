@@ -6,21 +6,20 @@ input {
   @apply w-[400px] border border-gray-200 py-2 px-6 bg-zinc-100/40;
 }
 
-
 @font-face {
-	font-family: Centra;
-	src: url('../app/src/assets/font/CentraNo2-Bold.ttf');
-	font-weight: 700;
+  font-family: Centra;
+  src: url("../app/src/assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: Centra;
-	src: url('../app/src/assets/font/CentraNo2-Medium.ttf');
-	font-weight: 500;
+  font-family: Centra;
+  src: url("../app/src/assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: Centra;
-	src: url('../app/src/assets/font/CentraNo2-Book.ttf');
-	font-weight: 400;
+  font-family: Centra;
+  src: url("../app/src/assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
 /************ Default Css ************/
@@ -38,18 +37,25 @@ html {
 body {
   font-weight: 400;
   overflow-x: hidden;
-  position: relative; 
-  font-family: 'Centra', sans-serif !important;
+  position: relative;
+  font-family: "Centra", sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
-  color: #fff;
+  color: #570df8dd;
 }
 
-p, a, button {
+p,
+a,
+button {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -74,37 +80,61 @@ button {
   outline: none;
 } */
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
 }
 
 p.success {
-	color: green;
+  color: green;
 }
 
 p.danger {
-	color: red;
+  color: red;
+}
+/*************Login CSS  ************/
+.login {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background: rgb(183, 142, 226);
+  background: linear-gradient(
+    45deg,
+    rgb(230, 178, 241) 0%,
+    rgba(247, 247, 247, 1) 82%
+  );
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 92vh;
 }
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('../app/src/assets/img/banner-bg.png');
+  background: rgb(215, 142, 226);
+  background: linear-gradient(
+    45deg,
+    rgb(201, 80, 235) 0%,
+    rgba(247, 247, 247, 1) 82%
+  );
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-    background-attachment: fixed; 
-    height: 90vh;
- 
+  background-attachment: fixed;
+  height: auto;
 }
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -119,8 +149,8 @@ p.danger {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+  color: #814fa0;
+  font-size: 22px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -146,15 +176,15 @@ p.danger {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
