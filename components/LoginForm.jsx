@@ -24,7 +24,7 @@ export default function LoginForm() {
         redirect: false,
       });
       
-      console.log(session?.user?.role);
+    
       if (res.error) {
         toast.error('Login Failed', {
           position: "top-center",
@@ -50,6 +50,22 @@ export default function LoginForm() {
           progress: undefined,
           theme: "light",
           });
+          switch (session?.user?.role) {
+            case 'student':
+              router.push("/student/dashboard")
+              break;
+            case 'college':
+              router.push("/college/dashboard")
+              break;
+            case 'university':
+              router.push("/university/dashboard")
+              break;
+            case 'ministry':
+              router.push("/ministry/dashboard")
+              break;
+            default:
+              break;
+          }
       }
       
     } catch (error) {
@@ -67,24 +83,9 @@ export default function LoginForm() {
     }
   };
 
-  const pushMethod=()=>{
   
-  switch (session?.user?.role) {
-    case 'student':
-      router.push("/student/dashboard")
-      break;
-    case 'college':
-      router.push("/college/dashboard")
-      break;
-    case 'university':
-      router.push("/university/dashboard")
-      break;
-    case 'ministry':
-      router.push("/ministry/dashboard")
-      break;
-    default:
-      break;
-  }}
+  
+ 
   return (
     <>
     <ToastContainer />
