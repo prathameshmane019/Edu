@@ -24,21 +24,10 @@
       "static/css/app/register/page.css",
       "static/chunks/app/register/page.js"
     ],
-    "/(Main)/student/layout": [
+    "/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(Main)/student/layout.js"
-    ],
-    "/(Main)/student/dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(Main)/student/dashboard/page.css",
-      "static/chunks/app/(Main)/student/dashboard/page.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/dashboard/page.js"
     ]
   }
 }

@@ -2474,6 +2474,10 @@ html {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mx-\[5vw\] {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -2497,14 +2501,6 @@ html {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
@@ -2605,6 +2601,9 @@ html {
 .h-12 {
   height: 3rem;
 }
+.h-14 {
+  height: 3.5rem;
+}
 .h-4 {
   height: 1rem;
 }
@@ -2626,15 +2625,6 @@ html {
 .h-screen {
   height: 100vh;
 }
-.h-9 {
-  height: 2.25rem;
-}
-.h-14 {
-  height: 3.5rem;
-}
-.h-1 {
-  height: 0.25rem;
-}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2647,6 +2637,9 @@ html {
 .w-12 {
   width: 3rem;
 }
+.w-14 {
+  width: 3.5rem;
+}
 .w-4 {
   width: 1rem;
 }
@@ -2656,8 +2649,11 @@ html {
 .w-\[15vw\] {
   width: 15vw;
 }
-.w-\[300px\] {
-  width: 300px;
+.w-\[350px\] {
+  width: 350px;
+}
+.w-\[500px\] {
+  width: 500px;
 }
 .w-\[85vw\] {
   width: 85vw;
@@ -2671,42 +2667,6 @@ html {
 }
 .w-full {
   width: 100%;
-}
-.w-9 {
-  width: 2.25rem;
-}
-.w-\[3px\] {
-  width: 3px;
-}
-.w-\[350px\] {
-  width: 350px;
-}
-.w-14 {
-  width: 3.5rem;
-}
-.w-1 {
-  width: 0.25rem;
-}
-.w-\[351px\] {
-  width: 351px;
-}
-.w-\[400px\] {
-  width: 400px;
-}
-.w-\[0px\] {
-  width: 0px;
-}
-.w-\[355px\] {
-  width: 355px;
-}
-.w-\[35px\] {
-  width: 35px;
-}
-.w-\[5px\] {
-  width: 5px;
-}
-.w-\[500px\] {
-  width: 500px;
 }
 .max-w-5xl {
   max-width: 64rem;
