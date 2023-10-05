@@ -4,7 +4,7 @@ export default async function DashboardPage() {
   return (
     <>
       <h1>General Stats</h1>
-      <div className="stats shadow mm m-25  w-fit">
+      <div className="stats shadow  m-25  w-fit">
         <div className="stat place-items-center">
           <div className="stat-title">Number of Students Enrolled</div>
           <div className="stat-value">50000</div>

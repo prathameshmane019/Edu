@@ -2,6 +2,8 @@ import MinistrySideBar from "./sidebar/page";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../../app/api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 export default async function MinistryLayout({ children }) {
   const session = await getServerSession(authOptions);
 
@@ -13,7 +15,7 @@ export default async function MinistryLayout({ children }) {
   return (
     
     <div className="flex   ">
-      
+      <ToastContainer/>
     <MinistrySideBar  />
     <div className=" content w-[85vw] ml-[18vw] mr-8">{children}</div>
     </div>

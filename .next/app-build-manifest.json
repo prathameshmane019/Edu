@@ -12,11 +12,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dashboard/page.js"
-    ],
     "/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -26,6 +21,7 @@
     "/(Main)/student/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/(Main)/student/layout.css",
       "static/chunks/app/(Main)/student/layout.js"
     ],
     "/(Main)/student/dashboard/page": [
@@ -34,27 +30,38 @@
       "static/css/app/(Main)/student/dashboard/page.css",
       "static/chunks/app/(Main)/student/dashboard/page.js"
     ],
-    "/(pages)/about/page": [
+    "/register/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/about/page.js"
+      "static/css/app/register/page.css",
+      "static/chunks/app/register/page.js"
     ],
-    "/(Main)/college/layout": [
+    "/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(Main)/college/layout.css",
-      "static/chunks/app/(Main)/college/layout.js"
+      "static/chunks/app/dashboard/page.js"
     ],
-    "/(Main)/college/dashboard/page": [
+    "/(Main)/ministry/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(Main)/college/dashboard/page.css",
-      "static/chunks/app/(Main)/college/dashboard/page.js"
+      "static/chunks/app/(Main)/ministry/loading.js"
     ],
-    "/(Main)/college/addproject/page": [
+    "/(Main)/ministry/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(Main)/college/addproject/page.js"
+      "static/css/app/(Main)/ministry/layout.css",
+      "static/chunks/app/(Main)/ministry/layout.js"
+    ],
+    "/(Main)/ministry/dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Main)/ministry/dashboard/page.css",
+      "static/chunks/app/(Main)/ministry/dashboard/page.js"
+    ],
+    "/(Main)/ministry/adduniversity/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Main)/ministry/adduniversity/page.js"
     ]
   }
 }

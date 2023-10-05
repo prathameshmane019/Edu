@@ -14,7 +14,7 @@ const Header = () => {
     <div className="bg-gradient-to-r from-indigo-400 to-purple-400 z-50  navbar shadow-xl sticky top-0 ">
       <div className="flex-1">
         <div
-          className="text-slate-200 btn btn-ghost normal-case text-xl"
+          className="text-slate-100 btn btn-ghost normal-case text-xl"
           onClick={() => navigate("/")}
         >
           <img
