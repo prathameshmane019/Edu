@@ -7,7 +7,7 @@ const AddCollege = () => {
         <div className="form-control w-full max-w-xs">
           <label className="label">
             <span className="label-text">College Name</span>
-            <span className="label-text-alt">(official name)</span>
+            
           </label>
           <input
             type="text"
@@ -18,7 +18,7 @@ const AddCollege = () => {
         <div className="form-control w-full max-w-xs">
           <label className="label">
             <span className="label-text">Email ID</span>
-            <span className="label-text-alt">(official email id)</span>
+            
           </label>
           <input
             type="email"
@@ -44,6 +44,51 @@ const AddCollege = () => {
           </label>
           <input
             type="password"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">State</span>
+            
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">City</span>
+            
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">Address</span>
+            
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">Pincode</span>
+            
+          </label>
+          <input
+            type="text"
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"
           />

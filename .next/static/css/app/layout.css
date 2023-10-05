@@ -1848,12 +1848,6 @@ html {
   --tw-text-opacity: 1;
   color: hsl(var(--bc) / var(--tw-text-opacity));
 }
-.label-text-alt {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  --tw-text-opacity: 1;
-  color: hsl(var(--bc) / var(--tw-text-opacity));
-}
 .input input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2457,6 +2451,9 @@ html {
 .pointer-events-none {
   pointer-events: none;
 }
+.static {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
@@ -2727,6 +2724,9 @@ html {
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
