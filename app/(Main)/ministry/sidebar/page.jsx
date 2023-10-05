@@ -1,11 +1,10 @@
 "use client";
-
 import { useRouter } from "next/navigation";
 import { signOut } from "next-auth/react";
-import { useRouter } from "next/navigation";
-const { data: session } = useSession();
+import { useSession } from "next-auth/react";
 export default function MinistrySideBar() {
   const router = useRouter();
+const { data: session } = useSession();
   const navigate = (name) => {
     router.push("/ministry/" + name);
   };
