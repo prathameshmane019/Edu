@@ -3400,6 +3400,9 @@ details.collapse summary::-webkit-details-marker {
   top: 0px;
   bottom: 0px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .left-2 {
   left: 0.5rem;
 }
@@ -3430,6 +3433,10 @@ details.collapse summary::-webkit-details-marker {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 .mx-\[5vw\] {
   margin-left: 5vw;
@@ -3587,6 +3594,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[20vh\] {
   height: 20vh;
 }
+.h-\[80vh\] {
+  height: 80vh;
+}
 .h-\[87vh\] {
   height: 87vh;
 }
@@ -3669,6 +3679,9 @@ details.collapse summary::-webkit-details-marker {
      -moz-appearance: none;
           appearance: none;
 }
+.grid-flow-col {
+  grid-auto-flow: column;
+}
 .flex-row {
   flex-direction: row;
 }
@@ -3701,6 +3714,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -3742,6 +3758,10 @@ details.collapse summary::-webkit-details-marker {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.bg-base-200 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b2) / var(--tw-bg-opacity));
 }
 .bg-blue-600 {
   --tw-bg-opacity: 1;
@@ -3789,6 +3809,9 @@ details.collapse summary::-webkit-details-marker {
 .p-2 {
   padding: 0.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-5 {
   padding: 1.25rem;
 }
@@ -3834,6 +3857,9 @@ details.collapse summary::-webkit-details-marker {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.pl-6 {
+  padding-left: 1.5rem;
 }
 .pl-8 {
   padding-left: 2rem;
@@ -3888,6 +3914,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 .text-gray-400 {
   --tw-text-opacity: 1;
@@ -4208,6 +4238,14 @@ code {
 
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:place-self-center {
+    place-self: center;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
   }
 }
 @media (min-width: 1024px) {

@@ -174,7 +174,7 @@ export const Banner = () => {
                   </h1>
                   <div
                     tabIndex={0}
-                    className="collapse border border-base-300 bg-200 mt-10"
+                    className="collapse border border-base-300 bg-200 mt-10 mx-40"
                   >
                     <div className="collapse-title text-xl font-medium">
                       What is this platform about?
@@ -191,7 +191,7 @@ export const Banner = () => {
 
                   <div
                     tabIndex={0}
-                    className="collapse border border-base-300 bg-200 mt-10"
+                    className="collapse border border-base-300 bg-200 mx-40 mt-10"
                   >
                     <div className="collapse-title text-xl font-medium">
                       How to connect with community?
@@ -205,7 +205,7 @@ export const Banner = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse border border-base-300 bg-200 mt-10"
+                    className="collapse border border-base-300 bg-200 mx-40 mt-10"
                   >
                     <div className="collapse-title text-xl font-medium">
                       Why should i use this platform?
@@ -226,6 +226,7 @@ export const Banner = () => {
                     </div>
                   </div>
                 </div>
+                
               </>
             )}
           </TrackVisibility>
