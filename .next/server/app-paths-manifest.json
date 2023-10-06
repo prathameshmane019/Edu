@@ -1,5 +1,8 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/login/page": "app/login/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/api/ministry/addUniversity/route": "app/api/ministry/addUniversity/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/(Main)/ministry/manageU/viewU/page": "app/(Main)/ministry/manageU/viewU/page.js"
 }
