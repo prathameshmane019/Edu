@@ -1,6 +1,7 @@
 import mongoose, { Schema, models } from "mongoose";
 const universitySchema = new Schema(
-  {name: {
+  {
+    name: {
     type: String,
     required: true,
   },
@@ -17,6 +18,18 @@ const universitySchema = new Schema(
   password: {
     type: String,
     required: true,
+  },
+  city: {
+    type: String,
+  },
+  address:{
+    type:String
+  },
+  phone:{
+    type:Number
+  },
+  college:{
+    type:Array
   },
   role: {
     type: String,

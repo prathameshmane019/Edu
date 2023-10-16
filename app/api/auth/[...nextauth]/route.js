@@ -2,6 +2,8 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import Student from "../../../../models/student";
+import College from "@/models/college";
+import University from "@/models/university";
 import { connectMongoDB } from "@/lib/mongodb";
 export const authOptions = {
   providers: [
@@ -13,7 +15,7 @@ export const authOptions = {
 
         try {
           await connectMongoDB();
-          const user = await Student.findOne({ email });
+          const user = await (Student.findOne({ email }))||(College.findOne({ email }))||(University.findOne({ email }));
 
           if (!user) {
             return null;
